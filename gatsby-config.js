@@ -21,6 +21,14 @@ module.exports = {
         implementation: require( 'sass' ),
       },
     },
+    {
+      resolve: 'gatsby-source-graphql',
+      options: {
+          typeName: 'GCMS',
+          fieldName: 'gcms',
+          url: 'https://api-us-west-2.graphcms.com/v2/ckjxyt1lyh6jm01xq5x0tcnsl/master',
+      }
+    },
     'gatsby-plugin-react-helmet',
     {
       resolve: `gatsby-source-filesystem`,
